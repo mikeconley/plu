@@ -1,0 +1,3 @@
+[submodule "external/box2d.js"]
+	path = external/box2d.js
+	url = https://github.com/kripken/box2d.js.git
