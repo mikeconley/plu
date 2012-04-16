@@ -5,7 +5,7 @@ define(["../entity", "../components/dom"], function(Entity, DOMComponent){
     var entity = new Entity(),
         domComponent = new DOMComponent();
 
-    domComponent.setId("sample-entity");
+    domComponent.addClass("sample-entity");
 
     domComponent.makeDraggable();
 

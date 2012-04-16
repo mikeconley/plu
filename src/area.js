@@ -7,6 +7,8 @@ define(["entity", "physics/world"], function(Entity, PhysicsWorld){
         _physics = new PhysicsWorld(),
         _this = this;
 
+    _element.classList.add("area");
+
     this.addEntity = function(entity){
       _entities.push(entity);
       if(entity._components.dom){
@@ -21,6 +23,7 @@ define(["entity", "physics/world"], function(Entity, PhysicsWorld){
     document.body.appendChild(_element);;
 
     _this._entities = _entities;
+    _this._element = _element;
 
   };
 

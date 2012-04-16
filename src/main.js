@@ -1,9 +1,7 @@
-define(["area", "entities/sample"], function(Area, SampleEntity){
+define(["area", "editor"], function(Area, Editor){
   
   var area = new Area();
 
-  var sampleEntity = SampleEntity();
-
-  area.addEntity(sampleEntity);
+  var editor = new Editor(area);
 
 });
