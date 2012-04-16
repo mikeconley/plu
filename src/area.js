@@ -1,9 +1,10 @@
-define(["entity"], function(Entity){
+define(["entity", "physics/world"], function(Entity, PhysicsWorld){
   
   return function(){
 
     var _entities = [],
         _element = document.createElement("div"),
+        _physics = new PhysicsWorld(),
         _this = this;
 
     this.addEntity = function(entity){
