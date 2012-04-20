@@ -10,6 +10,9 @@ define(["../events"], function(Events){
 
       obj.setEntity = function(entity){
         obj._entity = entity;
+        if(obj._onEntityChanged){
+          obj._onEntityChanged(entity);
+        }
       };
 
       obj._entity = null;
